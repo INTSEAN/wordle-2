@@ -27,6 +27,7 @@
 		99CF2AA829B0168700B4973F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CF2AA729B0168700B4973F /* Constants.swift */; };
 		99CF2AAA29B0172800B4973F /* BoardController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CF2AA929B0172800B4973F /* BoardController+Extensions.swift */; };
 		99CF2AAC29B0198D00B4973F /* ViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CF2AAB29B0198D00B4973F /* ViewController+Extensions.swift */; };
+		B6BA7B242D7A9F0B00EA5E14 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B6BA7B232D7A9F0400EA5E14 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		99CF2AA729B0168700B4973F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		99CF2AA929B0172800B4973F /* BoardController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BoardController+Extensions.swift"; sourceTree = "<group>"; };
 		99CF2AAB29B0198D00B4973F /* ViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B6BA7B232D7A9F0400EA5E14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		996B84A6299990A900133037 /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
+				B6BA7B232D7A9F0400EA5E14 /* README.md */,
 				9953C05429A40AC700247C5B /* BoardController.swift */,
 				996B84AB299990A900133037 /* ViewController.swift */,
 				996B84B5299990AA00133037 /* Info.plist */,
@@ -274,6 +277,7 @@
 			files = (
 				996B84B4299990AA00133037 /* LaunchScreen.storyboard in Resources */,
 				996B84B1299990AA00133037 /* Assets.xcassets in Resources */,
+				B6BA7B242D7A9F0B00EA5E14 /* README.md in Resources */,
 				996B84AF299990A900133037 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNPG25K6FD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wordle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -501,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Mari.Wordle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeanDonovan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -516,6 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNPG25K6FD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Wordle/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -528,7 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Mari.Wordle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SeanDonovan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
