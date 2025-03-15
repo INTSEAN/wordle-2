@@ -48,11 +48,23 @@ class ViewController: UIViewController,
     // START YOUR CODE HERE
     // ...
     // END YOUR CODE HERE
+      let leftBarButton = UIBarButtonItem(title: "Reset",
+                                          style: .plain,
+                                          target: self,
+                                          action: #selector(didTapReset))
+      leftBarButton.tintColor = .white
+      navigationItem.leftBarButtonItem = leftBarButton
+  }
+                                          
+  @objc private func didTapReset() {
+      boardController.resetBoardWithCurrentSettings()
   }
   
   @objc private func didTapSettingsButton() {
     performSegue(withIdentifier: segueIdentifier, sender: nil)
   }
+    
+    
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     guard segue.identifier == segueIdentifier else { return }

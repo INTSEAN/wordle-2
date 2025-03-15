@@ -30,6 +30,7 @@ class BoardController: NSObject,
     let rawTheme = SettingsManager.shared.settingsDictionary[kWordThemeKey] as! String
     let theme = WordTheme(rawValue: rawTheme)!
     self.goalWord = WordGenerator.generateGoalWord(with: theme)
+      print("Goal Word Intial: \(goalWord) ")
     super.init()
     collectionView.delegate = self
     collectionView.dataSource = self
@@ -50,7 +51,8 @@ class BoardController: NSObject,
   // Tip: Take a look at how resetBoard is implemented above. The only difference is that you don't want to change the settings
   func resetBoardWithCurrentSettings() {
     // START YOUR CODE HERE
-    // ...
+      numTimesGuessed = 0
+      collectionView.reloadData()
     // END YOUR CODE HERE
   }
   
@@ -94,7 +96,9 @@ class BoardController: NSObject,
       if let rawTheme = settings[kWordThemeKey] as? String,
              let theme = WordTheme(rawValue: rawTheme) {
                  goalWord = WordGenerator.generateGoalWord(with: theme)
-             }
+          print("Goal Word Theme is \(rawTheme): \(goalWord) ")
+
+                    }
       
     // END YOUR CODE HERE
   }
